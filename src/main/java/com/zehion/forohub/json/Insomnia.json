@@ -1,0 +1,218 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2025-01-08T22:45:19.279Z",
+  "__export_source": "insomnia.desktop.app:v10.3.0",
+  "resources": [
+    {
+      "_id": "wrk_33c192e4826f4ee1b59f94887df67298",
+      "parentId": null,
+      "modified": 1736376283435,
+      "created": 1732150476657,
+      "name": "forohub",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "fld_8356914ee2064a22859ef42f3a8da39d",
+      "parentId": "wrk_33c192e4826f4ee1b59f94887df67298",
+      "modified": 1735681732386,
+      "created": 1735602602088,
+      "name": "foroHub",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1735602602088,
+      "environmentType": "kv",
+      "_type": "request_group"
+    },
+    {
+      "_id": "env_13841b3f08502992e03676d94dbce823f648495d",
+      "parentId": "wrk_33c192e4826f4ee1b59f94887df67298",
+      "modified": 1732150476660,
+      "created": 1732150476660,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1732150476660,
+      "_type": "environment"
+    },
+    {
+      "_id": "req_548044daca044601b1e62436231df9fe",
+      "parentId": "fld_8356914ee2064a22859ef42f3a8da39d",
+      "modified": 1736372326331,
+      "created": 1736371686765,
+      "url": "http://localhost:8080/threads/4",
+      "name": "Update Thread",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"title\": \"¿Qué necesitas para empezar a programar?\",\n  \"content\": \"Un computador, lógica básica, un lenguaje, y mucha práctica. ¿Qué agregarías tú? (actualizado)\"\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/10.3.0"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzb2ZpYS52YXJnYXNAZ21haWwuY29tIiwiaWF0IjoxNzM2MzY3NzE2LCJleHAiOjE3MzY0MDM3MTZ9.j5hKX0txODLHH0ELB4oC65-cD3rnD_RG9F4RRXRYRSk"
+      },
+      "metaSortKey": -1736371686765,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_c5d5b25cd11940eb9d1215be36db89fb",
+      "parentId": "fld_8356914ee2064a22859ef42f3a8da39d",
+      "modified": 1736371721350,
+      "created": 1736371465425,
+      "url": "http://localhost:8080/threads/3",
+      "name": "Delete Thread",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/10.3.0"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzb2ZpYS52YXJnYXNAZ21haWwuY29tIiwiaWF0IjoxNzM2MzY3NzE2LCJleHAiOjE3MzY0MDM3MTZ9.j5hKX0txODLHH0ELB4oC65-cD3rnD_RG9F4RRXRYRSk"
+      },
+      "metaSortKey": -1736371465425,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_87122ff4282d440b8468328f95b1fdde",
+      "parentId": "fld_8356914ee2064a22859ef42f3a8da39d",
+      "modified": 1736370417790,
+      "created": 1736369383073,
+      "url": "http://localhost:8080/comments/5",
+      "name": "Update Comment",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"content\": \"programa en php\"\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/10.3.0"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzb2ZpYS52YXJnYXNAZ21haWwuY29tIiwiaWF0IjoxNzM2MzY3NzE2LCJleHAiOjE3MzY0MDM3MTZ9.j5hKX0txODLHH0ELB4oC65-cD3rnD_RG9F4RRXRYRSk"
+      },
+      "metaSortKey": -1736369383073,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_ebc92bc6314342f9b147b467995f3345",
+      "parentId": "fld_8356914ee2064a22859ef42f3a8da39d",
+      "modified": 1736368952004,
+      "created": 1736368534089,
+      "url": "http://localhost:8080/comments/4",
+      "name": "Delete Comment",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/10.3.0"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzb2ZpYS52YXJnYXNAZ21haWwuY29tIiwiaWF0IjoxNzM2MzY3NzE2LCJleHAiOjE3MzY0MDM3MTZ9.j5hKX0txODLHH0ELB4oC65-cD3rnD_RG9F4RRXRYRSk"
+      },
+      "metaSortKey": -1736368534089,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_2f876f3197134d3cb00287df26422820",
+      "parentId": "fld_8356914ee2064a22859ef42f3a8da39d",
+      "modified": 1736370509040,
+      "created": 1736292483128,
+      "url": "http://localhost:8080/threads/2",
+      "name": "List Comment",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/10.3.0"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzb2ZpYS52YXJnYXNAZ21haWwuY29tIiwiaWF0IjoxNzM2MzY3NzE2LCJleHAiOjE3MzY0MDM3MTZ9.j5hKX0txODLHH0ELB4oC65-cD3rnD_RG9F4RRXRYRSk"
+      },
+      "metaSortKey": -1736292483128,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    }
+  ]
+}
